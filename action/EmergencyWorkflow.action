@@ -1,0 +1,23 @@
+# EmergencyWorkflow.action
+# Long-running preemptible emergency workflow execution
+
+# Goal
+string workflow_name         # "FIRE_EVACUATION", "WATER_LEAK_ISOLATION", "INTRUSION_INTERCEPT", "MEDICAL_DISPATCH"
+string incident_type
+string location
+float64 confidence_score
+bool bypass_dnd_notifications
+---
+# Result
+bool success
+string[] completed_actions
+uint32 actions_succeeded
+uint32 actions_failed
+string emergency_dispatch_id
+float64 total_execution_time_ms
+string audit_summary
+---
+# Feedback
+string current_step
+float64 progress_ratio       # 0.0 to 1.0
+string active_subsystem

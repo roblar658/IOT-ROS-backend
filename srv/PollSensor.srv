@@ -1,0 +1,12 @@
+# PollSensor.srv
+# Service invoked by Gateway to pull/poll data from a sensor node
+
+string device_id
+bool include_raw_diagnostics
+---
+bool success
+string device_id
+float64[] values
+string[] value_keys
+string status_message
+builtin_interfaces/Time measurement_time

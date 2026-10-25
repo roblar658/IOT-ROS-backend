@@ -1,0 +1,20 @@
+# PredictiveMaintenance.action
+# Periodic or on-demand predictive maintenance diagnostic over target appliances
+
+# Goal
+string device_id
+float64 sampling_window_sec
+bool perform_fft_analysis
+---
+# Result
+bool health_ok
+float64 wear_index           # 0.0 (new) to 1.0 (imminent failure)
+float64 dominant_frequency_hz
+float64 harmonic_distortion
+uint32 estimated_days_remaining
+string recommended_maintenance
+---
+# Feedback
+float64 samples_processed_pct
+float64 current_vibration_rms
+float64 current_temp_c

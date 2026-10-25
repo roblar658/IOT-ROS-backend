@@ -1,0 +1,9 @@
+# ActuatorCommand.srv
+string target_actuator    # "WATER_VALVE", "EMERGENCY_LOCK", "HVAC", "LIGHTING", "APPLIANCE"
+string command            # "CLOSE", "OPEN", "UNLOCK", "LOCK", "STROBE", "FULL_ON", "OFF", "SET_MODE"
+string payload_json
+---
+bool success
+string actuator_id
+string current_state
+string message

@@ -1,0 +1,7 @@
+# SetPowerBudget.srv
+float64 max_power_limit_kw
+bool auto_shedding_enabled
+---
+bool success
+float64 applied_limit_kw
+string message

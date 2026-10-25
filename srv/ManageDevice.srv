@@ -1,0 +1,12 @@
+# ManageDevice.srv
+# Service for managing smart device lifecycle: ADD, REMOVE, START, STOP, RESUME
+
+string action        # "ADD", "REMOVE", "START", "STOP", "RESUME"
+string device_id
+string device_type
+string configuration_json
+---
+bool success
+string previous_state
+string new_state
+string message

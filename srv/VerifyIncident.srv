@@ -1,0 +1,13 @@
+# VerifyIncident.srv
+# Service invoked by Rule Engine / Gateway to verify an incident against multi-sensor evidence
+
+string primary_sensor_id
+string suspected_incident_type
+string location
+float64 primary_reading
+---
+bool verified
+float64 confidence_score
+string verification_summary
+string[] corroborating_sensors
+string recommended_emergency_action

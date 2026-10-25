@@ -1,0 +1,9 @@
+# EnergyStatus.msg
+builtin_interfaces/Time stamp
+float64 total_grid_power_kw
+float64 grid_voltage_v
+float64 grid_frequency_hz
+float64 power_budget_limit_kw
+bool peak_shaving_active
+string[] throttled_appliances
+float64 battery_storage_pct
